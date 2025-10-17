@@ -1,4 +1,4 @@
-import { Shield, DollarSign, Volume2, Thermometer, Leaf, Home, CheckCircle } from "lucide-react";
+import { Shield, DollarSign, Volume2, Thermometer, Leaf, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -13,7 +13,7 @@ const benefits = [
   {
     icon: DollarSign,
     title: "Energy Savings Up to 60%",
-    description: "Continuous insulation and airtight construction dramatically reduce heating and cooling costs. Many homeowners save $200-400 monthly on energy bills.",
+    description: "Continuous insulation and airtight construction dramatically reduce heating and cooling costs. Many homeowners save $100s monthly on energy bills.",
   },
   {
     icon: Volume2,
@@ -37,16 +37,6 @@ const benefits = [
   },
 ];
 
-const features = [
-  "Hurricane & tornado resistant (250+ mph winds)",
-  "4-hour fire rating",
-  "50-60% energy savings",
-  "Superior soundproofing (STC 50+ rating)",
-  "Mold & pest resistant",
-  "Qualifies for insurance discounts",
-  "LEED & Energy Star certification eligible",
-  "Disaster-resilient construction",
-];
 
 const comparisonData = [
   { metric: "Energy Efficiency", icf: "50-60% more efficient", traditional: "Standard" },
@@ -133,32 +123,10 @@ const ICF = () => {
               </CardContent>
             </Card>
 
-            <div className="mt-8 p-6 bg-secondary/10 rounded-lg border-2 border-secondary">
-              <p className="text-xl font-semibold text-center">
-                ICF construction costs only 3-5% more upfront but delivers a lifetime of savings, comfort, and peace of mind.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Features List Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">ICF Home Features</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <CheckCircle className="w-6 h-6 text-success flex-shrink-0" />
-                  <span className="text-lg">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-primary to-primary/80">
