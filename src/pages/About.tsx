@@ -24,18 +24,32 @@ const About = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      {/* About Section */}
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80">
+          <div className="absolute inset-0 bg-primary/60" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
+            Building Excellence Since 1998
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Our company was founded on a simple principle: treat every home like we're building it for our own family. 
+            What started as a small, local operation has grown into one of the region's trusted names in residential construction, 
+            but we've never lost sight of what matters most—quality, integrity, and the relationships we build with our clients.
+          </p>
+        </div>
+      </section>
+
+      {/* About Content Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Building Excellence Since 1998</h1>
               <div className="prose prose-lg mx-auto text-muted-foreground">
-                <p className="text-lg leading-relaxed mb-4">
-                  Our company was founded on a simple principle: treat every home like we're building it for our own family. 
-                  What started as a small, local operation has grown into one of the region's trusted names in residential construction, 
-                  but we've never lost sight of what matters most—quality, integrity, and the relationships we build with our clients.
-                </p>
                 <p className="text-lg leading-relaxed">
                   As a locally-owned business, we're not just building houses in this community—we're raising our families here too. 
                   That's why we're committed to sustainable practices, supporting local suppliers, and delivering craftsmanship that makes us proud.
