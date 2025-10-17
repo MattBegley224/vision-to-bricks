@@ -13,9 +13,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2 flex gap-6 items-center">
             <img src={logo} alt="Atlantic Northeast" className="h-24 w-auto flex-shrink-0" />
             <div>
-              <h3 className="text-2xl font-bold mb-2">Premier Builders</h3>
+              <h3 className="text-2xl font-bold mb-2">Atlantic Northeast Contracting</h3>
               <p className="opacity-90">
-                Building exceptional homes with quality craftsmanship and transparent communication since 1998.
+                Building high performance homes with quality craftsmanship and transparent communication
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="opacity-75 text-sm">
-            © {currentYear} Premier Builders. All rights reserved. | Licensed • Insured • Bonded
+            © {currentYear} Atlantic Northeast Contracting. All rights reserved. | Licensed • Insured • Bonded
           </p>
         </div>
       </div>
