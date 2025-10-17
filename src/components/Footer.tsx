@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import logo from "@/assets/ane-logo-2.png";
+import logo from "@/assets/ane-logo-3.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,12 +9,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
-            <img src={logo} alt="Atlantic Northeast" className="h-48 w-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-4">Premier Builders</h3>
-            <p className="opacity-90 mb-4">
-              Building exceptional homes with quality craftsmanship and transparent communication since 1998.
-            </p>
+          <div className="col-span-1 md:col-span-2 flex gap-6 items-start">
+            <img src={logo} alt="Atlantic Northeast" className="h-32 w-auto flex-shrink-0" />
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Premier Builders</h3>
+              <p className="opacity-90 mb-4">
+                Building exceptional homes with quality craftsmanship and transparent communication since 1998.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
