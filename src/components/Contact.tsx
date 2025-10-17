@@ -118,17 +118,17 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="name">Name *</Label>
-                <Input id="name" required className="mt-1" placeholder="John Smith" />
+                <Input id="name" name="name" required className="mt-1" placeholder="John Smith" />
               </div>
 
               <div>
                 <Label htmlFor="email">Email *</Label>
-                <Input id="email" type="email" required className="mt-1" placeholder="john@example.com" />
+                <Input id="email" name="email" type="email" required className="mt-1" placeholder="john@example.com" />
               </div>
 
               <div>
                 <Label htmlFor="phone">Phone *</Label>
-                <Input id="phone" type="tel" required className="mt-1" placeholder="(555) 555-5555" />
+                <Input id="phone" name="phone" type="tel" required className="mt-1" placeholder="(555) 555-5555" />
               </div>
 
               <div>
@@ -149,7 +149,8 @@ const Contact = () => {
               <div>
                 <Label htmlFor="message">Tell us about your project *</Label>
                 <Textarea 
-                  id="message" 
+                  id="message"
+                  name="message" 
                   required 
                   className="mt-1 min-h-32" 
                   placeholder="I'm interested in building a custom home..."
