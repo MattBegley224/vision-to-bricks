@@ -5,11 +5,45 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, MessageCircle, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [projectType, setProjectType] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success("Thank you! We'll be in touch within 24 hours.");
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      projectType: projectType,
+      message: formData.get("message") as string,
+    };
+
+    try {
+      const { error } = await supabase.functions.invoke("send-sms", {
+        body: data,
+      });
+
+      if (error) {
+        console.error("Error sending SMS:", error);
+        toast.error("There was an issue submitting your request. Please try again.");
+      } else {
+        toast.success("Thank you! We'll be in touch within 24 hours.");
+        e.currentTarget.reset();
+        setProjectType("");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error("There was an issue submitting your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -99,7 +133,7 @@ const Contact = () => {
 
               <div>
                 <Label htmlFor="project-type">Project Type *</Label>
-                <Select>
+                <Select value={projectType} onValueChange={setProjectType} required>
                   <SelectTrigger id="project-type" className="mt-1">
                     <SelectValue placeholder="Select project type" />
                   </SelectTrigger>
@@ -122,8 +156,8 @@ const Contact = () => {
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full" variant="default">
-                Submit Request
+              <Button type="submit" size="lg" className="w-full" variant="default" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit Request"}
                 <ArrowRight className="ml-2" />
               </Button>
             </form>
