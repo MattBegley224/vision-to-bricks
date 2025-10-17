@@ -62,7 +62,7 @@ const ICF = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80">
           <div className="absolute inset-0 bg-primary/60" />

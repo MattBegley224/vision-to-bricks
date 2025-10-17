@@ -25,7 +25,7 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80">
           <div className="absolute inset-0 bg-primary/60" />
@@ -80,7 +80,7 @@ const About = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-primary text-primary-foreground">
+      <section id="contact" className="py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Build Your Dream Home?</h2>

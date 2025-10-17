@@ -58,7 +58,7 @@ const Navigation = () => {
               size="default"
               asChild
             >
-              <a href="/about">Get Started</a>
+              <a href="/about#contact">Get Started</a>
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <Button variant="default" size="default" className="w-full" asChild>
-                  <a href="/about" onClick={() => setIsMobileMenuOpen(false)}>
+                  <a href="/about#contact" onClick={() => setIsMobileMenuOpen(false)}>
                     Get Started
                   </a>
                 </Button>
