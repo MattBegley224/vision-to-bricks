@@ -24,13 +24,13 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <Button variant="secondary" size="xl" asChild>
-            <a href="#contact">
+            <a href="/about">
               Start Your Project Today
               <ArrowRight className="ml-2" />
             </a>
           </Button>
           <Button variant="heroOutline" size="xl" asChild>
-            <a href="#portfolio">View Our Portfolio</a>
+            <a href="/icf">Learn About ICF</a>
           </Button>
         </div>
       </div>

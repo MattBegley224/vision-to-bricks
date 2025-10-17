@@ -166,10 +166,10 @@ const ICF = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="secondary" size="xl" asChild>
-              <a href="#contact">Get Your ICF Quote</a>
+              <a href="/about">Get Your ICF Quote</a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#contact">See ICF Homes in Action</a>
+              <a href="/about">See ICF Homes in Action</a>
             </Button>
           </div>
         </div>

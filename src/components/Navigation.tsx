@@ -19,7 +19,7 @@ const Navigation = () => {
     { href: "/", label: "Home" },
     { href: "/icf", label: "ICF" },
     { href: "/rebates", label: "Rebates" },
-    { href: "#about", label: "About" },
+    { href: "/about", label: "About" },
   ];
 
   return (
@@ -58,7 +58,7 @@ const Navigation = () => {
               size="default"
               asChild
             >
-              <a href="#contact">Get Started</a>
+              <a href="/about">Get Started</a>
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <Button variant="default" size="default" className="w-full" asChild>
-                  <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  <a href="/about" onClick={() => setIsMobileMenuOpen(false)}>
                     Get Started
                   </a>
                 </Button>
