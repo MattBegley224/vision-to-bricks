@@ -24,56 +24,57 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
+              <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold mb-1">Phone</p>
-                    <a href="tel:5555555555" className="text-lg hover:text-secondary transition-colors">
+                    <p className="font-bold text-lg mb-2">Phone</p>
+                    <a href="tel:5555555555" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
                       (555) 555-5555
                     </a>
-                    <p className="text-sm opacity-80 mt-1">Monday-Friday: 8am-6pm | Saturday: 9am-3pm</p>
+                    <p className="text-sm opacity-90">Monday-Friday: 8am-6pm</p>
+                    <p className="text-sm opacity-90">Saturday: 9am-3pm</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold mb-1">Email</p>
-                    <a href="mailto:info@premierbuilders.com" className="text-lg hover:text-secondary transition-colors">
+                    <p className="font-bold text-lg mb-2">Email</p>
+                    <a href="mailto:info@premierbuilders.com" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
                       info@premierbuilders.com
                     </a>
-                    <p className="text-sm opacity-80 mt-1">We respond within 24 hours</p>
+                    <p className="text-sm opacity-90">We respond within 24 hours</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold mb-1">Office</p>
+                    <p className="font-bold text-lg mb-2">Office</p>
                     <p className="text-lg">123 Builder's Lane</p>
                     <p className="text-lg">Your City, ST 12345</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold mb-1">Text Us</p>
-                    <a href="sms:5555555555" className="text-lg hover:text-secondary transition-colors">
+                    <p className="font-bold text-lg mb-2">Text Us</p>
+                    <a href="sms:5555555555" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
                       (555) 555-5555
                     </a>
-                    <p className="text-sm opacity-80 mt-1">Quick questions? Send us a text</p>
+                    <p className="text-sm opacity-90">Quick questions? Send us a text</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8 border-t border-primary-foreground/20">
-              <p className="text-lg font-semibold mb-2">Licensed • Insured • Local • Trusted</p>
+            <div className="pt-6 border-t border-primary-foreground/30">
+              <p className="text-xl font-bold text-center">Licensed • Insured • Local • Trusted</p>
             </div>
           </div>
 
