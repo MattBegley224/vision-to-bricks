@@ -71,7 +71,7 @@ const Rebates = () => {
             Build Smarter. Save More. Live Better.
           </p>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Transform your new home into an energy-efficient haven with EnergyForward New Homes.
+            Transform your new home into an energy-efficient haven with the EnergyForward New Homes program.
           </p>
         </div>
       </section>
