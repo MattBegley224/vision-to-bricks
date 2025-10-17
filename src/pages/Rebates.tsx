@@ -94,7 +94,7 @@ const Rebates = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 bg-muted">
+      <section className="pt-16 pb-24 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Your Benefits</h2>
           
