@@ -49,10 +49,10 @@ const About = () => {
       </section>
 
       {/* About Content Section */}
-      <section className="py-24 bg-background">
+      <section className="pt-12 pb-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
+            <div className="text-center mb-6">
               <div className="prose prose-lg mx-auto text-muted-foreground">
                 <p className="text-lg leading-relaxed">
                   We're committed to building smarter, not just bigger.<br />
