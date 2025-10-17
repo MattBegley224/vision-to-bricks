@@ -81,7 +81,8 @@ const Rebates = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed mb-4">
-              Why settle for standard when you can build exceptional? The EnergyForward New Homes program rewards you for going beyond basic building codes with generous rebates that put money back in your pocket.
+              Why settle for standard when you can build exceptional?<br />
+              The EnergyForward New Homes program rewards you for going beyond basic building codes with generous rebates that put money back in your pocket.
             </p>
           </div>
         </div>
