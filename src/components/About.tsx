@@ -1,9 +1,9 @@
-import { Heart, Shield, Users } from "lucide-react";
+import { Sun, DollarSign, Cpu } from "lucide-react";
 
 const values = [
-  { icon: Shield, label: "Quality First", description: "No shortcuts, no compromises" },
-  { icon: Users, label: "Transparent Communication", description: "Honest, clear, always accessible" },
-  { icon: Heart, label: "Integrity", description: "We do what we say we'll do" },
+  { icon: Sun, label: "Basements", description: "Bright, high and dry" },
+  { icon: DollarSign, label: "Increase Insulation", description: "Increase energy savings" },
+  { icon: Cpu, label: "Technology", description: "Integrate the latest advances in household technology" },
 ];
 
 const About = () => {
