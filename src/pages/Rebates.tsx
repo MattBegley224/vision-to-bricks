@@ -77,7 +77,7 @@ const Rebates = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="pb-24 pt-16 bg-background">
+      <section className="pt-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed mb-4">
@@ -116,7 +116,7 @@ const Rebates = () => {
       </section>
 
       {/* Who Qualifies Section */}
-      <section className="py-24 bg-background">
+      <section className="bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">Who Qualifies?</h2>
@@ -128,7 +128,7 @@ const Rebates = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-24 bg-muted">
+      <section className="pb-24 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">How It Works</h2>
           
