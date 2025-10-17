@@ -1,4 +1,4 @@
-import { DollarSign, TrendingDown, Thermometer, TrendingUp, Leaf, CheckCircle } from "lucide-react";
+import { DollarSign, TrendingDown, Thermometer, TrendingUp, Leaf, CheckCircle, Recycle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -29,6 +29,11 @@ const benefits = [
     icon: Leaf,
     title: "Environmental Impact",
     description: "Reduce your carbon footprint and environmental impact",
+  },
+  {
+    icon: Recycle,
+    title: "Sustainable Living",
+    description: "Build with eco-friendly materials and renewable energy solutions",
   },
 ];
 
