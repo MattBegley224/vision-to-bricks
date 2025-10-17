@@ -16,9 +16,7 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { href: "#features", label: "Why Us" },
-    { href: "#process", label: "Our Process" },
-    { href: "/icf", label: "ICF Construction" },
+    { href: "/icf", label: "ICF" },
     { href: "#about", label: "About" },
   ];
 
