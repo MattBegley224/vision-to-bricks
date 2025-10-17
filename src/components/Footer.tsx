@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <img src={logo} alt="Atlantic Northeast" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Atlantic Northeast" className="h-24 w-auto mb-4" />
             <h3 className="text-2xl font-bold mb-4">Premier Builders</h3>
             <p className="opacity-90 mb-4">
               Building exceptional homes with quality craftsmanship and transparent communication since 1998.
