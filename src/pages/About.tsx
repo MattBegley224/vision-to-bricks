@@ -55,8 +55,7 @@ const About = () => {
             <div className="text-center mb-8">
               <div className="prose prose-lg mx-auto text-muted-foreground">
                 <p className="text-lg leading-relaxed">
-                  As a locally-owned business, we're not just building houses in this community—we're raising our families here too. 
-                  That's why we're committed to sustainable practices, supporting local suppliers, and delivering craftsmanship that makes us proud.
+                  We're committed to building smarter, not just bigger. We understand the impact of rising energy costs and know that proper insulation is your home's best investment. By incorporating advanced insulation techniques and materials, we help homeowners achieve up to 30% energy savings annually. Enhanced insulation doesn't just keep you comfortable—it dramatically reduces heating and cooling costs, putting money back in your pocket month after month while increasing your home's value.
                 </p>
               </div>
             </div>
