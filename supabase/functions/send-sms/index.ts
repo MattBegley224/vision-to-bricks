@@ -1,5 +1,5 @@
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
-import notificationapi from 'https://esm.sh/notificationapi-node-server-sdk@0.20.0';
+
 
 const NOTIFICATIONAPI_CLIENT_ID = 'gg28cit19i2udm80g3ir1cgf9j';
 const NOTIFICATIONAPI_CLIENT_SECRET = '7t29kkvylbgi8x5x4w5g43deo49ytndgaxnq57u0f5zu12zk2ae2xpaden';
@@ -19,14 +19,6 @@ interface ContactFormData {
   message: string;
 }
 
-// Initialize NotificationAPI SDK
-notificationapi.init(
-  NOTIFICATIONAPI_CLIENT_ID,
-  NOTIFICATIONAPI_CLIENT_SECRET,
-  {
-    baseURL: NOTIFICATIONAPI_BASE_URL
-  }
-);
 
 serve(async (req) => {
   console.log('=== Edge Function Invoked ===');
@@ -65,16 +57,39 @@ serve(async (req) => {
 
     console.log('Sending to NotificationAPI with payload:', JSON.stringify(notificationPayload, null, 2));
 
-    // Send SMS using NotificationAPI SDK
-    const result = await notificationapi.send(notificationPayload);
-    
-    console.log('NotificationAPI response:', JSON.stringify(result, null, 2));
+    const authBasic = 'Basic ' + btoa(`${NOTIFICATIONAPI_CLIENT_ID}:${NOTIFICATIONAPI_CLIENT_SECRET}`);
+    const url = `${NOTIFICATIONAPI_BASE_URL}/${NOTIFICATIONAPI_CLIENT_ID}/sender`;
+
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Authorization': authBasic,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(notificationPayload),
+    });
+
+    let respBody: any = null;
+    try {
+      respBody = await resp.json();
+    } catch (_) {
+      try { respBody = await resp.text(); } catch { respBody = null; }
+    }
+
+    console.log('NotificationAPI HTTP status:', resp.status);
+    console.log('NotificationAPI response body:', respBody);
+
+    if (!resp.ok && resp.status !== 202) {
+      throw new Error(typeof respBody === 'string' ? respBody : JSON.stringify(respBody));
+    }
+
     console.log('SMS sent successfully!');
 
     return new Response(JSON.stringify({
       success: true,
       message: 'SMS sent successfully',
-      notificationResult: result
+      status: resp.status,
+      response: respBody
     }), {
       status: 200,
       headers: {
