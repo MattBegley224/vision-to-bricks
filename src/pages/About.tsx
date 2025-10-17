@@ -43,8 +43,7 @@ const About = () => {
             Building Excellence
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Our company was founded on a simple principle: treat every home like we're building it for our own family. 
-            What started as a small, local operation has grown into one of the region's trusted names in residential construction.
+            What started as a passion for quality building has grown into a legacy of excellence. We believe construction is personal—whether it's the home where your family will grow or the business where your dreams will flourish, we build with purpose and pride.
           </p>
         </div>
       </section>
