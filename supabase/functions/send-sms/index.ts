@@ -1,9 +1,17 @@
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
-import notificationapi from 'npm:notificationapi-node-server-sdk@6.0.0';
+import notificationapi from 'https://esm.sh/notificationapi-node-server-sdk@0.20.0';
+
+const CLIENT_ID = Deno.env.get('NOTIFICATIONAPI_CLIENT_ID')?.trim();
+const CLIENT_SECRET = Deno.env.get('NOTIFICATIONAPI_CLIENT_SECRET')?.trim();
+
+if (!CLIENT_ID || !CLIENT_SECRET) {
+  console.error('Missing NotificationAPI credentials');
+  throw new Error('Missing NotificationAPI credentials');
+}
 
 notificationapi.init(
-  'gg28cit19i2udm80g3ir1cgf9j',
-  '7t29kkvylbgi8x5x4w5g43deo49ytndgaxnq57u0f5zu12zk2ae2xpaden',
+  CLIENT_ID,
+  CLIENT_SECRET,
   {
     baseURL: 'https://api.ca.notificationapi.com'
   }
@@ -33,18 +41,16 @@ serve(async (req) => {
     
     console.log('Received contact form:', { name, email, phone, projectType });
 
-    // Send SMS notification using NotificationAPI SDK
-    const smsMessage = `New Contact Form Submission!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Type: ${projectType}\nMessage: ${message}`;
-    
     await notificationapi.send({
       type: 'welcome_notification',
       to: {
         id: 'mattbegley224@gmail.com',
         number: '+19023027711'
       },
-      sms: {
-        message: smsMessage
-      }
+      parameters: {
+        comment: message || 'testComment'
+      },
+      templateId: 'sms1'
     });
     
     console.log('SMS sent successfully');
