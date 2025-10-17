@@ -32,7 +32,7 @@ const benefits = [
   },
   {
     icon: Home,
-    title: "Future-Ready Home",
+    title: "Sustainability",
     description: "Build a durable, high-performance home designed for generations",
   },
 ];
