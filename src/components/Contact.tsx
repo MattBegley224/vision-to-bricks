@@ -131,22 +131,45 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="name">Name *</Label>
-                <Input id="name" name="name" required className="mt-1" placeholder="John Smith" />
+                <Input 
+                  id="name" 
+                  name="name" 
+                  required 
+                  className="mt-1" 
+                  placeholder="John Smith"
+                  autoComplete="name"
+                />
               </div>
 
               <div>
                 <Label htmlFor="email">Email *</Label>
-                <Input id="email" name="email" type="email" required className="mt-1" placeholder="john@example.com" />
+                <Input 
+                  id="email" 
+                  name="email" 
+                  type="email" 
+                  required 
+                  className="mt-1" 
+                  placeholder="john@example.com"
+                  autoComplete="email"
+                />
               </div>
 
               <div>
                 <Label htmlFor="phone">Phone *</Label>
-                <Input id="phone" name="phone" type="tel" required className="mt-1" placeholder="(555) 555-5555" />
+                <Input 
+                  id="phone" 
+                  name="phone" 
+                  type="tel" 
+                  required 
+                  className="mt-1" 
+                  placeholder="(555) 555-5555"
+                  autoComplete="tel"
+                />
               </div>
 
               <div>
                 <Label htmlFor="project-type">Project Type *</Label>
-                <Select value={projectType} onValueChange={setProjectType} required>
+                <Select name="project-type" value={projectType} onValueChange={setProjectType} required>
                   <SelectTrigger id="project-type" className="mt-1">
                     <SelectValue placeholder="Select project type" />
                   </SelectTrigger>
@@ -167,6 +190,7 @@ const Contact = () => {
                   required 
                   className="mt-1 min-h-32" 
                   placeholder="I'm interested in building a custom home..."
+                  autoComplete="off"
                 />
               </div>
 
