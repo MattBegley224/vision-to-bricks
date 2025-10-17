@@ -1,18 +1,10 @@
-import { Award, Heart, Shield, Users } from "lucide-react";
+import { Heart, Shield, Users } from "lucide-react";
 import logo from "@/assets/ane-logo.png";
 
 const values = [
   { icon: Shield, label: "Quality First", description: "No shortcuts, no compromises" },
   { icon: Users, label: "Transparent Communication", description: "Honest, clear, always accessible" },
-  { icon: Award, label: "Craftsmanship", description: "Skilled trades, attention to detail" },
   { icon: Heart, label: "Integrity", description: "We do what we say we'll do" },
-];
-
-const credentials = [
-  "Licensed General Contractor",
-  "Fully Insured & Bonded",
-  "Home Builders Association Member",
-  "Better Business Bureau A+ Rating",
 ];
 
 const About = () => {
@@ -41,7 +33,7 @@ const About = () => {
           {/* Our Values */}
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-center mb-8">Our Values</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {values.map((value, index) => {
                 const Icon = value.icon;
                 return (
@@ -57,24 +49,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Credentials */}
-          <div className="bg-muted p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-center mb-6">Awards & Certifications</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {credentials.map((credential, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <Award className="w-5 h-5 text-success flex-shrink-0" />
-                  <span className="font-medium">{credential}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 pt-8 border-t border-border text-center">
-              <p className="text-lg font-semibold mb-2">Community Involvement</p>
-              <p className="text-muted-foreground">
-                Proud supporters of Habitat for Humanity and local youth programs
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

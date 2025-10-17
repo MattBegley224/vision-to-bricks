@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,14 +13,6 @@ const Footer = () => {
             <p className="opacity-90 mb-4">
               Building exceptional homes with quality craftsmanship and transparent communication since 1998.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-secondary transition-colors">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-secondary transition-colors">
-                <Instagram className="w-6 h-6" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
