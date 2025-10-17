@@ -31,7 +31,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/icf" className="opacity-90 hover:text-secondary transition-colors">
-                  ICF Construction
+                  ICF
                 </Link>
               </li>
               <li>
