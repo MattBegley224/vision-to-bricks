@@ -53,14 +53,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 opacity-90">
                 <Phone className="w-4 h-4" />
-                <a href="tel:5555555555" className="hover:text-secondary transition-colors">
-                  (555) 555-5555
-                </a>
-              </li>
-              <li className="flex items-center gap-2 opacity-90">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:info@premierbuilders.com" className="hover:text-secondary transition-colors">
-                  info@premierbuilders.com
+                <a href="tel:9023027711" className="hover:text-secondary transition-colors">
+                  (902) 302-7711
                 </a>
               </li>
             </ul>
@@ -69,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="opacity-75 text-sm">
-            © {currentYear} Atlantic Northeast Contracting. All rights reserved. | Licensed • Insured • Bonded
+            © {currentYear} Atlantic Northeast Contracting. All rights reserved. | Licensed • Insured • WCB
           </p>
         </div>
       </div>
