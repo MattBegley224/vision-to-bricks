@@ -71,7 +71,7 @@ const ICF = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            The Future of Home Building: Insulated Concrete Forms
+            ICF: The Future of Home Building
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Insulated Concrete Form (ICF) construction combines the strength of reinforced concrete with continuous insulation, creating homes that are stronger, more energy-efficient, and more comfortable than traditional building methods.
