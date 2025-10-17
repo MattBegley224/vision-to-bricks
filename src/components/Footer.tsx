@@ -57,6 +57,12 @@ const Footer = () => {
                   (902) 302-7711
                 </a>
               </li>
+              <li className="flex items-center gap-2 opacity-90">
+                <Mail className="w-4 h-4" />
+                <a href="#contact" className="hover:text-secondary transition-colors">
+                  Message
+                </a>
+              </li>
             </ul>
           </div>
         </div>
