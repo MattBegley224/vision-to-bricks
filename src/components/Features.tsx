@@ -31,19 +31,19 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-background">
+    <section id="features" className="bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-4">
+        <div className="text-center">
+          <div className="flex justify-center">
             <img src={logo} alt="Atlantic Northeast" className="w-64 h-auto" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Homeowners Choose Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 mt-12">Why Homeowners Choose Us</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building your dream home starts with choosing the right partner
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-24">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
