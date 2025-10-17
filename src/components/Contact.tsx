@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Build Your Dream Home?</h2>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Let's start with a conversation. Schedule your free consultation today and discover how we can bring your vision to life.
+            Schedule your free consultation today and discover how we can bring your vision to life.
           </p>
         </div>
 
@@ -92,10 +92,8 @@ const Contact = () => {
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Message</p>
-                    <a href="/about#contact" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
-                      Contact Form
-                    </a>
-                    <p className="text-sm opacity-90">We respond within 24 hours</p>
+                    <p className="text-xl font-semibold">Contact Form</p>
+                    <p className="text-sm opacity-90">(Below)</p>
                   </div>
                 </div>
 
