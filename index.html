@@ -8,6 +8,18 @@
     <meta name="description" content="Expert residential construction with transparent pricing, quality craftsmanship, and commitment to bringing your vision to life—on time and on budget." />
     <meta name="author" content="Premier Construction Co." />
 
+    <script>
+      // Handle redirect from 404.html
+      (function() {
+        var redirect = sessionStorage.getItem('redirectPath');
+        if (redirect) {
+          sessionStorage.removeItem('redirectPath');
+          // Store it in a way the app can access it after React loads
+          window.__REDIRECT_PATH__ = redirect;
+        }
+      })();
+    </script>
+
     <meta property="og:title" content="Premier Home Builders | Quality Residential Construction" />
     <meta property="og:description" content="Expert residential construction with transparent pricing, quality craftsmanship, and commitment to bringing your vision to life." />
     <meta property="og:type" content="website" />
