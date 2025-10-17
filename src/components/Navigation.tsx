@@ -17,6 +17,7 @@ const Navigation = () => {
 
   const navLinks = [
     { href: "/icf", label: "ICF" },
+    { href: "/rebates", label: "Rebates" },
     { href: "#about", label: "About" },
   ];
 
