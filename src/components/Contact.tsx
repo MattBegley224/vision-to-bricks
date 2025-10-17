@@ -26,21 +26,34 @@ const Contact = () => {
     };
 
     try {
-      const { error } = await supabase.functions.invoke("send-sms", {
+      console.log("Submitting contact form with data:", data);
+      
+      const { data: responseData, error } = await supabase.functions.invoke("send-sms", {
         body: data,
       });
 
+      console.log("Edge function response:", { responseData, error });
+
       if (error) {
-        console.error("Error sending SMS:", error);
-        toast.error("There was an issue submitting your request. Please try again.");
+        console.error("Error from edge function:", {
+          message: error.message,
+          details: error,
+          fullError: JSON.stringify(error, null, 2)
+        });
+        toast.error(`Failed to send: ${error.message || "Unknown error"}`);
       } else {
+        console.log("SMS sent successfully:", responseData);
         toast.success("Thank you! We'll be in touch within 24 hours.");
         e.currentTarget.reset();
         setProjectType("");
       }
-    } catch (error) {
-      console.error("Error:", error);
-      toast.error("There was an issue submitting your request. Please try again.");
+    } catch (error: any) {
+      console.error("Caught exception:", {
+        message: error?.message,
+        stack: error?.stack,
+        fullError: JSON.stringify(error, Object.getOwnPropertyNames(error), 2)
+      });
+      toast.error(`Error: ${error?.message || "Unknown error occurred"}`);
     } finally {
       setIsSubmitting(false);
     }
