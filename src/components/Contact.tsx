@@ -80,20 +80,20 @@ const Contact = () => {
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Phone</p>
-                    <a href="tel:5555555555" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
-                      (555) 555-5555
+                    <a href="tel:9023027711" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
+                      (902) 302-7711
                     </a>
-                    <p className="text-sm opacity-90">Monday-Friday: 8am-6pm</p>
-                    <p className="text-sm opacity-90">Saturday: 9am-3pm</p>
+                    <p className="text-sm opacity-90">Monday-Friday: 9am-6pm</p>
+                    <p className="text-sm opacity-90">Saturday: 10am-3pm</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-bold text-lg mb-2">Email</p>
-                    <a href="mailto:info@premierbuilders.com" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
-                      info@premierbuilders.com
+                    <p className="font-bold text-lg mb-2">Message</p>
+                    <a href="/about#contact" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
+                      Contact Form
                     </a>
                     <p className="text-sm opacity-90">We respond within 24 hours</p>
                   </div>
@@ -103,8 +103,8 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Office</p>
-                    <p className="text-lg">123 Builder's Lane</p>
-                    <p className="text-lg">Your City, ST 12345</p>
+                    <p className="text-lg">Richmond, NS</p>
+                    <p className="text-lg">Canada</p>
                   </div>
                 </div>
 
@@ -112,8 +112,8 @@ const Contact = () => {
                   <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Text Us</p>
-                    <a href="sms:5555555555" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
-                      (555) 555-5555
+                    <a href="sms:9023027711" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
+                      (902) 302-7711
                     </a>
                     <p className="text-sm opacity-90">Quick questions? Send us a text</p>
                   </div>
@@ -122,7 +122,7 @@ const Contact = () => {
             </div>
 
             <div className="pt-6 border-t border-primary-foreground/30">
-              <p className="text-xl font-bold text-center">Licensed • Insured • Local • Trusted</p>
+              <p className="text-xl font-bold text-center">Licensed • Insured • WCB</p>
             </div>
           </div>
 
