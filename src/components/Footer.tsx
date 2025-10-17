@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/ane-logo-3.png";
 
 const Footer = () => {
@@ -24,19 +25,24 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="opacity-90 hover:text-secondary transition-colors">
-                  Why Us
-                </a>
+                <Link to="/" className="opacity-90 hover:text-secondary transition-colors">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#process" className="opacity-90 hover:text-secondary transition-colors">
-                  Our Process
-                </a>
+                <Link to="/icf" className="opacity-90 hover:text-secondary transition-colors">
+                  ICF Construction
+                </Link>
               </li>
               <li>
-                <a href="#about" className="opacity-90 hover:text-secondary transition-colors">
+                <Link to="/rebates" className="opacity-90 hover:text-secondary transition-colors">
+                  Rebates
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="opacity-90 hover:text-secondary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
