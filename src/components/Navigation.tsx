@@ -34,7 +34,9 @@ const Navigation = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img src={logo} alt="Atlantic Northeast" className="h-20 w-auto" />
-            <span className="text-2xl font-bold">Atlantic Northeast</span>
+            <span className={`text-2xl font-bold transition-colors ${
+              isScrolled ? "text-foreground" : "text-primary-foreground"
+            }`}>Atlantic Northeast</span>
           </a>
 
           {/* Desktop Navigation */}
