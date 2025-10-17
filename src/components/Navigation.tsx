@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/ane-logo.png";
@@ -33,32 +34,32 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="Atlantic Northeast" className="h-20 w-auto" />
             <span className={`text-2xl font-bold transition-colors ${
               isScrolled ? "text-foreground" : "text-primary-foreground"
             }`}>Atlantic Northeast</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 className={`font-medium transition-colors hover:text-secondary ${
                   isScrolled ? "text-foreground" : "text-primary-foreground"
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Button 
               variant={isScrolled ? "default" : "heroOutline"} 
               size="default"
               asChild
             >
-              <a href="/about#contact">Get Started</a>
+              <Link to="/about#contact">Get Started</Link>
             </Button>
           </div>
 
@@ -80,20 +81,20 @@ const Navigation = () => {
           <div className="md:hidden pb-6 bg-background rounded-b-lg shadow-lg">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   className="font-medium text-foreground hover:text-secondary transition-colors px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <div className="px-4">
                 <Button variant="default" size="default" className="w-full" asChild>
-                  <a href="/about#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link to="/about#contact" onClick={() => setIsMobileMenuOpen(false)}>
                     Get Started
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
