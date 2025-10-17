@@ -37,7 +37,7 @@ const Features = () => {
           <div className="flex justify-center">
             <img src={logo} alt="Atlantic Northeast" className="w-64 h-auto" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 mt-6">Why Homeowners Choose Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 mt-2">Why Homeowners Choose Us</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-16">
             Building your dream home starts with choosing the right partner
           </p>
