@@ -1,5 +1,6 @@
 import { Hammer, MessageSquare, CheckCircle, Pencil } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import logo from "@/assets/ane-logo.png";
 
 const features = [
   {
@@ -33,6 +34,9 @@ const Features = () => {
     <section id="features" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-8">
+            <img src={logo} alt="Atlantic Northeast" className="w-64 h-auto shadow-2xl rounded-lg" />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Homeowners Choose Us</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building your dream home starts with choosing the right partner

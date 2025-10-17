@@ -1,5 +1,4 @@
 import { Heart, Shield, Users } from "lucide-react";
-import logo from "@/assets/ane-logo.png";
 
 const values = [
   { icon: Shield, label: "Quality First", description: "No shortcuts, no compromises" },
@@ -13,9 +12,6 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="flex justify-center mb-8">
-              <img src={logo} alt="Atlantic Northeast" className="w-64 h-auto" />
-            </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Building Excellence Since 1998</h2>
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="text-lg leading-relaxed mb-4">
