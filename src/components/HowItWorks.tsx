@@ -40,11 +40,11 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="process" className="py-24 bg-accent text-accent-foreground">
+    <section id="process" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">From Vision to Reality in 5 Simple Steps</h2>
-          <p className="text-xl opacity-90">
+          <p className="text-xl text-muted-foreground">
             Most custom homes completed in 8-12 months
           </p>
         </div>
