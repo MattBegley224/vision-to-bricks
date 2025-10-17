@@ -6,11 +6,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Phone, Mail, MapPin, MessageCircle, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [projectType, setProjectType] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -44,7 +45,7 @@ const Contact = () => {
       } else {
         console.log("SMS sent successfully:", responseData);
         toast.success("Thank you! We'll be in touch within 24 hours.");
-        e.currentTarget.reset();
+        formRef.current?.reset();
         setProjectType("");
       }
     } catch (error: any) {
@@ -128,7 +129,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-card text-card-foreground p-8 rounded-lg shadow-2xl">
             <h3 className="text-2xl font-bold mb-6">Get Your Free Consultation</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="name">Name *</Label>
                 <Input 
