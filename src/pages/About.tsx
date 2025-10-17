@@ -34,12 +34,11 @@ const About = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            Building Excellence Since 1998
+            Building Excellence
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Our company was founded on a simple principle: treat every home like we're building it for our own family. 
-            What started as a small, local operation has grown into one of the region's trusted names in residential construction, 
-            but we've never lost sight of what matters most—quality, integrity, and the relationships we build with our clients.
+            What started as a small, local operation has grown into one of the region's trusted names in residential construction.
           </p>
         </div>
       </section>
