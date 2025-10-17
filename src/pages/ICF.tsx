@@ -139,10 +139,7 @@ const ICF = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="secondary" size="xl" asChild>
-              <a href="/about">Get Your ICF Quote</a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href="/about">See ICF Homes in Action</a>
+              <a href="https://elementicf.com/?gad_source=1&gad_campaignid=21461721258&gbraid=0AAAAA9sjwG1eTw3HgmH9CTN6Hj1crMrUh&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qbbuuRyRTRxT9xXWSq9UdxIYCL3B06vPN-Zyi8u8DEWahs5C7M8ExRoCtkgQAvD_BwE" target="_blank" rel="noopener noreferrer">Learn More</a>
             </Button>
           </div>
         </div>
