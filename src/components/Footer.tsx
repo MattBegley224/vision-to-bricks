@@ -15,7 +15,7 @@ const Footer = () => {
             <div>
               <h3 className="text-2xl font-bold mb-2">Atlantic Northeast Contracting</h3>
               <p className="opacity-90">
-                Building high performance homes with quality craftsmanship and transparent communication
+                Building high-performance homes with quality craftsmanship and transparent communication
               </p>
             </div>
           </div>
