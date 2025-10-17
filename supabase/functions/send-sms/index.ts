@@ -1,5 +1,5 @@
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
-import notificationapi from 'npm:notificationapi-node-server-sdk';
+import notificationapi from 'notificationapi-node-server-sdk';
 
 notificationapi.init(
   'gg28cit19i2udm80g3ir1cgf9j',

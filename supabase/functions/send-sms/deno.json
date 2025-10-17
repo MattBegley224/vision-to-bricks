@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "notificationapi-node-server-sdk": "npm:notificationapi-node-server-sdk@^6.0.0"
+  }
+}
