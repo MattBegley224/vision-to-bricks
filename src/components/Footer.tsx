@@ -38,11 +38,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="opacity-90 hover:text-secondary transition-colors">
-                  Pricing
-                </a>
-              </li>
-              <li>
                 <a href="#about" className="opacity-90 hover:text-secondary transition-colors">
                   About Us
                 </a>

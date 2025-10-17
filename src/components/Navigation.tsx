@@ -17,7 +17,6 @@ const Navigation = () => {
   const navLinks = [
     { href: "#features", label: "Why Us" },
     { href: "#process", label: "Our Process" },
-    { href: "#pricing", label: "Pricing" },
     { href: "#about", label: "About" },
   ];
 
