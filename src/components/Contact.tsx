@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
