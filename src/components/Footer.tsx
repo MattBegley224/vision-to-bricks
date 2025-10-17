@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2 flex gap-6 items-start">
             <img src={logo} alt="Atlantic Northeast" className="h-32 w-auto flex-shrink-0" />
             <div>
-              <h3 className="text-2xl font-bold mb-4">Premier Builders</h3>
-              <p className="opacity-90 mb-4">
+              <h3 className="text-2xl font-bold mb-2">Premier Builders</h3>
+              <p className="opacity-90">
                 Building exceptional homes with quality craftsmanship and transparent communication since 1998.
               </p>
             </div>

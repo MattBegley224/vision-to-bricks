@@ -33,8 +33,8 @@ const Features = () => {
   return (
     <section id="features" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-8">
+        <div className="text-center mb-12">
+          <div className="flex justify-center mb-4">
             <img src={logo} alt="Atlantic Northeast" className="w-64 h-auto" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Homeowners Choose Us</h2>
