@@ -75,7 +75,7 @@ const ICF = () => {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-24 bg-background">
+      <section className="pb-24 pt-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Key Benefits</h2>
@@ -151,19 +151,6 @@ const ICF = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-24 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6 text-secondary">"</div>
-            <blockquote className="text-2xl md:text-3xl font-medium mb-8 italic">
-              After Hurricane [Name], our ICF home didn't have a scratch while neighbors faced major damage. Best decision we ever made.
-            </blockquote>
-            <div className="text-lg text-muted-foreground">— Happy ICF Homeowner</div>
           </div>
         </div>
       </section>
