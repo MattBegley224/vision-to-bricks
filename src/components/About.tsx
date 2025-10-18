@@ -33,7 +33,7 @@ const About = () => {
               {values.map((value, index) => {
                 const Icon = value.icon;
                 return (
-                  <div key={index} className="text-center">
+                  <div key={index} className="text-center p-6 rounded-lg border bg-card btn-stroke transition-all duration-300 hover:shadow-lg hover:scale-105">
                     <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="w-8 h-8 text-secondary" />
                     </div>
