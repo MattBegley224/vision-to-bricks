@@ -61,7 +61,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-12 pb-24 bg-primary text-primary-foreground">
+    <section id="contact" className="pt-12 pb-24 bg-muted text-foreground">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Build Your Dream Home?</h2>
@@ -76,7 +76,7 @@ const Contact = () => {
             <div>
               <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Phone</p>
@@ -88,7 +88,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Message</p>
@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Office</p>
@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-primary-foreground/10 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                   <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-lg mb-2">Text Us</p>
@@ -119,7 +119,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-primary-foreground/30">
+            <div className="pt-6 border-t border-border">
               <p className="text-xl font-bold text-center">Licensed • Insured • WCB</p>
             </div>
           </div>
