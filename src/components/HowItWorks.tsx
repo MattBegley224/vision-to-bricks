@@ -25,7 +25,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-            We're committed to building smarter, not just bigger.
+            We're Committed to Building Smarter, Not Just Bigger.
           </h2>
           
           <div className="prose prose-lg max-w-none mb-12 text-muted-foreground text-center">
