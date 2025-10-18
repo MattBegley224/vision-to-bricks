@@ -1,14 +1,14 @@
-import { Home, Zap, Cpu } from "lucide-react";
+import { Sun, DollarSign, Cpu } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const values = [
   {
-    icon: Home,
+    icon: Sun,
     label: "Basements",
     description: "Bright, high and dry",
   },
   {
-    icon: Zap,
+    icon: DollarSign,
     label: "Increase Insulation",
     description: "Increase energy savings",
   },
