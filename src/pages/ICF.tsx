@@ -85,7 +85,8 @@ const ICF = () => {
               return (
                 <Card 
                   key={index} 
-                  className="border-2 hover:border-secondary hover:shadow-xl transition-all duration-300 group"
+                  className="border-2 hover:border-secondary hover:shadow-xl transition-all duration-300 group shadow-lg hover:scale-105 animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
                     <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
