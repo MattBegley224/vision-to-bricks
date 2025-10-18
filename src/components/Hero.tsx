@@ -19,7 +19,7 @@ const Hero = () => {
           Build the Home You've Always Imagined
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          Expert residential construction with transparent pricing, quality craftsmanship, and a commitment to bringing your vision to life—on time and on budget.
+          Residential construction with transparent pricing, quality craftsmanship, and a commitment to bringing your vision to life—on time and on budget.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
