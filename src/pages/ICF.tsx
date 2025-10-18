@@ -32,7 +32,7 @@ const benefits = [
   },
   {
     icon: Home,
-    title: "Long-Term Durability",
+    title: "Sustainability",
     description: "Resistant to rot, mold, pests, and deterioration. ICF homes maintain their value and require less maintenance over time.",
   },
 ];
