@@ -76,7 +76,7 @@ const Contact = () => {
             <div>
               <h3 className="text-3xl font-bold mb-8 animate-fade-in">Get In Touch</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary">
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-border">
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Phone</p>
@@ -88,7 +88,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.1s" }}>
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-border" style={{ animationDelay: "0.1s" }}>
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Message</p>
@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.2s" }}>
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-border" style={{ animationDelay: "0.2s" }}>
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Office</p>
@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.3s" }}>
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-border" style={{ animationDelay: "0.3s" }}>
                   <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Text Us</p>
@@ -125,7 +125,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card text-card-foreground p-8 rounded-lg shadow-2xl">
+          <div className="bg-card text-card-foreground p-8 rounded-lg shadow-2xl border-2 border-border">
             <h3 className="text-2xl font-bold mb-6">Get Your Free Consultation</h3>
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
               <div>
