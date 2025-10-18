@@ -130,7 +130,7 @@ const ICF = () => {
 
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-bl from-primary to-primary/80">
+      <section className="py-24 bg-gradient-to-br from-primary to-primary/80">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
             Ready to Build Your ICF Home?
