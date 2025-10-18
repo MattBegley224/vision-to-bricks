@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Pencil,
-    title: "Custom Design Flexibility",
+    title: "Flexibility",
     description: "From modern minimalist to classic traditional, we bring your unique style to life.",
     benefit: "A home that's uniquely yours",
   },
