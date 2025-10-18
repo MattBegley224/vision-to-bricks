@@ -28,7 +28,7 @@ const HowItWorks = () => {
             We're committed to building smarter, not just bigger.
           </h2>
           
-          <div className="prose prose-lg max-w-none mb-12 text-muted-foreground">
+          <div className="prose prose-lg max-w-none mb-12 text-muted-foreground text-center">
             <p className="text-lg leading-relaxed">
               We understand the impact of rising energy costs and know that proper insulation is your home's best investment. 
               By incorporating advanced insulation techniques and materials, we help homeowners achieve up to 30% energy savings annually. 
