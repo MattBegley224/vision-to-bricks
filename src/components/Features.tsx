@@ -6,7 +6,7 @@ const features = [
   {
     icon: Hammer,
     title: "Quality Craftsmanship",
-    description: "Every home we build meets the highest standards of construction excellence. We use premium materials and proven techniques that stand the test of time.",
+    description: "Every home we build meets the highest standards of construction excellence.",
     benefit: "A home built to last generations",
   },
   {
@@ -18,13 +18,13 @@ const features = [
   {
     icon: CheckCircle,
     title: "On-Time, On-Budget",
-    description: "We respect your time and investment with detailed planning, accurate estimates, and a proven track record of meeting deadlines.",
+    description: "We respect your time and investment with detailed planning, accurate estimates, and reasonable deadlines.",
     benefit: "Move into your dream home exactly when planned",
   },
   {
     icon: Pencil,
     title: "Custom Design Flexibility",
-    description: "From modern minimalist to classic traditional, we bring your unique style to life with fully customizable designs.",
+    description: "From modern minimalist to classic traditional, we bring your unique style to life.",
     benefit: "A home that's uniquely yours",
   },
 ];
