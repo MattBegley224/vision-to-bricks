@@ -74,10 +74,10 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
+              <h3 className="text-3xl font-bold mb-8 animate-fade-in">Get In Touch</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                  <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary">
+                  <Phone className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Phone</p>
                     <a href="tel:9023027711" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
@@ -88,8 +88,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                  <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.1s" }}>
+                  <Mail className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Message</p>
                     <p className="text-xl font-semibold">Contact Form</p>
@@ -97,8 +97,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                  <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.2s" }}>
+                  <MapPin className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Office</p>
                     <p className="text-lg">Richmond, NS</p>
@@ -106,8 +106,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                  <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border-2 border-transparent hover:border-secondary" style={{ animationDelay: "0.3s" }}>
+                  <MessageCircle className="w-6 h-6 flex-shrink-0 mt-1 text-secondary" />
                   <div>
                     <p className="font-bold text-lg mb-2">Text Us</p>
                     <a href="sms:9023027711" className="text-xl font-semibold hover:text-secondary transition-colors block mb-1">
@@ -119,8 +119,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-border">
-              <p className="text-xl font-bold text-center">Licensed • Insured • WCB</p>
+            <div className="pt-6 border-t border-border animate-fade-in" style={{ animationDelay: "0.4s" }}>
+              <p className="text-xl font-bold text-center tracking-wide">Licensed • Insured • WCB</p>
             </div>
           </div>
 
