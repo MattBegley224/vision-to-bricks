@@ -12,7 +12,7 @@ const About = () => {
       const element = document.querySelector(location.hash);
       if (element) {
         setTimeout(() => {
-          const yOffset = -100; // Offset to account for fixed header
+          const yOffset = -150; // Offset to account for fixed header
           const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }, 100);
