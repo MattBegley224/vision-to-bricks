@@ -28,7 +28,7 @@ const benefits = [
   {
     icon: Leaf,
     title: "Environmentally Friendly",
-    description: "Reduced energy consumption means lower carbon footprint. ICF homes qualify for green building certifications and tax incentives.",
+    description: "Reduced energy consumption means lower carbon footprint.",
   },
   {
     icon: Home,
