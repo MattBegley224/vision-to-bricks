@@ -23,20 +23,20 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          <Button variant="secondary" size="xl" asChild>
+          <Button variant="secondary" size="xl" className="w-full sm:w-auto" asChild>
             <a href="/rebates">
               Start Your Project Today
               <ArrowRight className="ml-2" />
             </a>
           </Button>
-          <Button variant="heroOutline" size="xl" asChild>
+          <Button variant="heroOutline" size="xl" className="w-full sm:w-auto" asChild>
             <a href="/icf">Learn About ICF</a>
           </Button>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <a href="/about#contact" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer">
+      <a href="/about#contact" className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer">
         <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-primary-foreground/50 rounded-full" />
         </div>
