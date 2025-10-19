@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
@@ -48,16 +48,16 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 opacity-90">
+              <li className="flex items-center justify-center md:justify-start gap-2 opacity-90">
                 <Phone className="w-4 h-4" />
                 <a href="tel:9023027711" className="hover:text-secondary transition-colors">
                   (902) 302-7711
                 </a>
               </li>
-              <li className="flex items-center gap-2 opacity-90">
+              <li className="flex items-center justify-center md:justify-start gap-2 opacity-90">
                 <Mail className="w-4 h-4" />
                 <a href="/about#contact" className="hover:text-secondary transition-colors">
                   Message
