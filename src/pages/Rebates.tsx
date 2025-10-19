@@ -70,8 +70,8 @@ const Rebates = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] opacity-20" />
         </div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-20">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
             EnergyForward New Homes
           </h1>
           <p className="text-2xl md:text-3xl text-primary-foreground/90 mb-4 font-semibold animate-fade-in-up" style={{ animationDelay: "0.1s" }}>

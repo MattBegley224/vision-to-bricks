@@ -59,7 +59,7 @@ const ICF = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-20">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
             ICF: The Future of Home Building
           </h1>
